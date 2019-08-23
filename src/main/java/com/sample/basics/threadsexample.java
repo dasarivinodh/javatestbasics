@@ -10,8 +10,15 @@ class threadsexample extends Thread{
         System.out.println("Hello Threads");
         threadsexample t=new threadsexample();
         t.start(); 
-        // t.stop();
+        // System.out.println("Hi");
+        t.stop();
         // t.start(); // op will not run run method
+
+        ThreadClass1 t1=new ThreadClass1();
+        ThreadClass2 t2=new ThreadClass2();
+        t1.start();
+        t2.start();
+
     }
 
 }
