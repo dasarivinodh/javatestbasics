@@ -1,6 +1,7 @@
 package com.sample.basics;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 class comparableexample
 {
@@ -8,9 +9,9 @@ class comparableexample
     public static void main(String args[]) {
       
         System.out.println("hello");
-        Student s =new Student("Vinodh",736,15);
-        Student s1 =new Student("Vishnu",739,21);
-        Student s2 =new Student("Datta",890,55);
+        Student s =new Student("sanodh",736,15);
+        Student s1 =new Student("satish",739,21);
+        Student s2 =new Student("satta",890,55);
         ArrayList<Student> listSt=new ArrayList<Student>();
         listSt.add(s);
         listSt.add(s1);
@@ -19,11 +20,20 @@ class comparableexample
         {
              System.out.println(x);
         }
-        listSt.sort();
+        System.out.println("+++++++++++++++++++++");
+        Collections.sort(listSt);
         for(Student x:listSt)
         {
              System.out.println(x);
         }
+        System.out.println("+++++++++++++++++++++");
+        CustomComparator cc=new CustomComparator();
+        listSt.sort(cc);
+        for(Student x:listSt)
+        {
+             System.out.println(x);
+        }
+
 
         
         
