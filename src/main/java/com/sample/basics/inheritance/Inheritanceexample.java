@@ -8,6 +8,7 @@ class A {
 
 class B extends A {
 	void m1() {
+		super.m1();
 		System.out.println("In m1 B");
 	}
 
