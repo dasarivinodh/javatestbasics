@@ -6,6 +6,10 @@ class Test1 {
     Test1(int x) {
         System.out.println("Constructor called " + x);
     }
+
+    private void tesm() {
+        System.out.println("Hi");
+    }
 }
 
 class Test2 {
@@ -29,5 +33,6 @@ class Test2 {
 
     Test2(int i) {
         t1 = new Test1(i);
+
     }
 }
