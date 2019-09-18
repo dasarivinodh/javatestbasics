@@ -1,3 +1,5 @@
+package com.sample.basics;
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
